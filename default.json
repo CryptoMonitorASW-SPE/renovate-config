@@ -16,6 +16,13 @@
     "labels": [
         "dependencies"
     ],
+    "packageRules": [
+    {
+      "description": "Updates to the dependencies should trigger a new patch release",
+      "matchPaths": ["package.json"],
+      "semanticCommitScope": "core-deps"
+    }
+    ],
     "prConcurrentLimit": 25,
     "prHourlyLimit": 0,
     "separateMajorMinor": true,
