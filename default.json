@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "config:base",
+        ":rebaseStalePrs",
+        ":semanticCommits",
+        ":semanticCommitTypeAll(chore)"
+    ],
+    "assignees": [
+        "stormtroober",
+        "TonelliLuca",
+        "LudovicoNollino"
+    ],
+    "automerge": true,
+    "dependencyDashboard": true,
+    "labels": [
+        "dependencies"
+    ],
+    "prConcurrentLimit": 25,
+    "prHourlyLimit": 0,
+    "separateMajorMinor": true,
+    "separateMinorPatch": true,
+    "separateMultipleMajor": true
+  }
